@@ -85,7 +85,7 @@ ul{
 .li{
     position: relative;
 }
-.li::after{
+/* .li::after{
     content: '';
     width: 0;
     height: 2px;
@@ -97,7 +97,7 @@ ul{
 }
 .li:hover::after{
     width: 100%;
-}
+} */
 
 .nav-btn{
     padding: 6px 12px;
@@ -509,6 +509,8 @@ footer{
     
     .navbar-links.active{
         display: flex;
+        animation: slide-out .3s ease;
+
     }
 
     .cards-container{
