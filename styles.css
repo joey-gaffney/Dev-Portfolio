@@ -454,15 +454,6 @@ footer{
     }
   }
 
-@keyframes slide-in-right {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
-  }
-
 @media screen and (max-width: 700px) {
 
     .hero h1{
@@ -502,15 +493,11 @@ footer{
         flex-direction: column;
         width: 100%;
         align-items: flex-end;
-        animation: slide-in-right .3s;
+        animation: slide-in-right .3s ease-in-out;
     }
     
     .navbar-links.active{
         display: flex;
-    }
-
-    .navbar.active{
-        background-color: #333;
     }
 
     .cards-container{
