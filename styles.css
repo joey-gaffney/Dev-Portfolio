@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,11 +12,11 @@ html{
 }
 
 body{
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #333;
-    background-color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
+    color: #fff;
+    background-color:rgb(30, 30, 30);
     overflow-x: hidden;
 }
 
@@ -29,7 +31,6 @@ body{
     transform: translateX(0);
     opacity: 1;
   }
-
 
 .logo a{
     color: #333;
@@ -50,11 +51,13 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 30px 20px;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    color: #fff;
-    background-color: #333;
+    color: #333;
+    background-color: whitesmoke;
     z-index: 9999;
     transition: all 300ms ease-in-out;
 }
@@ -69,10 +72,10 @@ ul{
     display: inline-block;
     padding: 3px 3px;
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 400;
     font-family: sans-serif;
     letter-spacing: 2px;
-    color: #fff;
+    color: #333;
     transition: .3s ease-in-out;
 }
 
@@ -99,10 +102,10 @@ ul{
 .toggle-button{
     display: none;
     position: absolute;
-    top: 18px;
+    top: 26px;
     right: 20px;
     font-size: 1.7rem;
-    color: #fff;
+    color: #333;
     cursor: pointer;
 }
 
@@ -115,9 +118,35 @@ ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:#333;
+    color:#fff;
     position: relative;
-    padding: 0px 20px;
+}
+
+.res-btn{
+    display: inline-block;
+    padding: 11px 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+    color: #fff;
+    outline: 1px solid #fff;
+    opacity: 1;
+    transition: .1s ease-in-out;
+}
+
+.res-btn:hover{
+    opacity: .7;
+}
+
+.reveal{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 1.2s;
+}
+
+.reveal.active{
+  transform: translateX(0);
+  opacity: 1;
 }
 
 @keyframes slide-in {
@@ -128,37 +157,48 @@ ul{
       transform: translateX(0%);
     }
   }
-
 .hero-img-div{
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -10;
-    height: 340px;
-    animation: slide-in 1300ms;
+    /* height: 340px; */
+    height: 100%;
+    animation: slide-in 1000ms;
 }
 
 .hero-img{
     height: 100%;
+    opacity: .2;
 }
 
 .name{
     font-size: 14px;
     letter-spacing: 5px;
     font-weight: 100;
+    opacity: .2;
     text-transform: uppercase;
     margin-bottom: 40px;
+    animation: fade 2000ms ease-in;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .2;
+    }
 }
 
 .hero h1{
     font-size: 3rem;
-    letter-spacing: 3px;
+    opacity: .7;
 }
 
 .hero span{
     font-size: 2rem;
-    letter-spacing: 3px;
-    color: #333;
+    letter-spacing: 1px;
+    color: #999;
 }
 
 .hero-text{
@@ -168,7 +208,9 @@ ul{
 
 .hero-btn{
     margin-top: 20px;
+    display: inline-block;
 }
+
 
 /* ABOUT */
 .about-container img{
@@ -243,7 +285,6 @@ ul{
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 10px;
-    box-shadow: 0px 0px 6px gray;
     border-radius: 4px;
 }
 
@@ -270,14 +311,15 @@ ul{
 }
 
 .row-column-1 h3{
-    color: #333;
+    color: #fff;
+    font-size: 1.4rem;
 }
-
 
 .row-column-1 p{
     margin-top: 10px;
     line-height: 1.6;
-    font-size: 1.1rem;
+    opacity: .8;
+    letter-spacing: 1px;
 }
 
 .row-column-2{
@@ -296,25 +338,25 @@ ul{
 
 .btn{
     /* display: inline-block; */
-    padding: 10px 40px;
-    margin-right: 8px;
+    padding: 12px 24px;
     border-radius: 4px;
-    outline: 1px solid #333;
-    color: #333;
-}
-
-.btn:hover{
-    outline: 1px solid rgba(51, 51, 51, 0.502);
-    color:  rgba(51, 51, 51, 0.725);
+    margin-right: 8px;
+    color: #fff;
+    background-color: rgb(89, 0, 255);
+    opacity: 1;
     transition: .1s ease-in-out;
 }
 
+.btn:hover{
+    /* outline: 1px solid rgba(51, 51, 51, 0.502); */
+    /* color:  rgba(51, 51, 51, 0.725); */
+    opacity: .9;
+}
+
 .btn-2{
-    padding: 10px 40px;
-    outline: 1px solid rgba(51, 51, 51, 0.502);
-    color:  rgba(51, 51, 51, 0.725);
+    padding: 12px 24px;
     outline-color: #333;
-    color: #333;
+    color: #fff;
 }
 
 /* CARDS */
@@ -368,60 +410,40 @@ ul{
 
 
 /* FOOTER */
+footer{
+    margin-top: 40px;
+}
 .foot-container{
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
-    min-height: 300px;
+    min-height: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
+    flex-direction: column;
 }
 
-.list i{
-    display: inline-block;
-    padding: 5px 5px;
-    font-size: 1.1rem;
-    transition: .3s ease-in-out;
-}
-
-.list i:hover{
-    transform: scale(1.1);
-}
-
-.list{
-    font-size: .8rem;
-}
-
-.list span{
-    color: #333;
-}
-
-.list a{
-    color: #333;
-    text-decoration: underline;
+.foot-container p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
 }
 
 .one{
-    color: rgb(0, 157, 255);
-    font-size: 2rem;
-    border-radius: 50%;
+    color: lightseagreen;
+    font-size: 1.7rem;
+    margin: 0px 8px;
     transition: all .2s ease-in-out;
     cursor: pointer;
-    transition: .3s;
+    transition: .3s ease-in-out;
     opacity: .8;
 }
 
 .one:hover{
-    opacity: 1;
-}
-
-.cnt-links{
-    margin-top: 10px;
-    text-align: center;
+    opacity: .5;
 }
 
 @keyframes slide-in-right {
@@ -433,7 +455,20 @@ ul{
     }
   }
 
+@keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
 @media screen and (max-width: 700px) {
+
+    .hero h1{
+        font-size: 2rem;
+    }
     
     .about-container{
         flex-direction: column;
@@ -476,7 +511,7 @@ ul{
     }
 
     .navbar.active{
-        background-color: #333;
+        background-color: whitesmoke;
     }
 
     .cards-container{
