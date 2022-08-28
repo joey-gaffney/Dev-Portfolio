@@ -223,7 +223,6 @@ ul{
     align-items: center;
     justify-content: center;
     line-height: 1.6;
-    font-weight: 300;
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
@@ -235,12 +234,14 @@ ul{
     padding: 40px 20px;
     max-width: 800px;
     font-size: 1.1rem;
-    color: lightgray;
+    font-weight: 200;
+    color: #fff;
+    opacity: .8;
 }
 
 .i-span{
     color: rgb(0, 98, 255);
-    font-style: italic;
+    font-weight: 400;
     text-decoration: underline;
 }
 
@@ -322,7 +323,7 @@ ul{
 
 .row-column-1 h3{
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .row-column-1 p{
@@ -330,6 +331,7 @@ ul{
     line-height: 1.6;
     opacity: .8;
     letter-spacing: 1px;
+    font-size: 1.1rem;
 }
 
 .row-column-2{
