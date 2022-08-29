@@ -208,11 +208,11 @@ ul{
 
 
 /* ABOUT */
+
 .about-container img{
     max-width: 500px;
     min-width: 400px;
     width: 100%;
-    flex: 1;
 }
 
 .about{
@@ -281,6 +281,7 @@ ul{
 }
 
 .projects-container-inner{
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
