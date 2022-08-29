@@ -216,7 +216,7 @@ ul{
 
 .about{
     background-color: black;
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,7 +228,7 @@ ul{
     align-items: center;
     justify-content: center;
     line-height: 1.6;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -237,7 +237,7 @@ ul{
 
 .about-text{
     padding: 40px 20px;
-    max-width: 800px;
+    max-width: 1200px;
     font-size: 1.1rem;
     font-weight: 200;
     color: #fff;
@@ -281,7 +281,7 @@ ul{
 }
 
 .projects-container-inner{
-    max-width: 1300px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -425,7 +425,7 @@ ul{
 
 /* FOOTER */
 footer{
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .foot-container{
     max-width: 1300px;
