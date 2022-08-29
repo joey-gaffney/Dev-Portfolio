@@ -186,7 +186,7 @@ ul{
 }
 
 .hero h1{
-    font-size: 3rem;
+    font-size: 5.5rem;
     opacity: .7;
 }
 
@@ -216,6 +216,11 @@ ul{
 
 .about{
     background-color: black;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-container{
@@ -482,6 +487,10 @@ footer{
     }
     .reverse{
         flex-direction: column;
+    }
+
+    .row-column-1{
+        padding: 20px 0px;
     }
 
     .toggle-button{
