@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    font-size: 16px;
+    /* font-size: 16px; */
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: #fff;
@@ -238,8 +238,8 @@ ul{
 .about-text{
     padding: 40px 20px;
     max-width: 900px;
-    font-size: 1.1rem;
-    font-weight: 200;
+    /* font-size: 1.1rem; */
+    /* font-weight: 200; */
     color: #fff;
     opacity: .8;
 }
@@ -336,7 +336,7 @@ ul{
     line-height: 1.6;
     opacity: .8;
     letter-spacing: 1px;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
 }
 
 .row-column-2{
