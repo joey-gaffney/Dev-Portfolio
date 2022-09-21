@@ -229,6 +229,7 @@ ul{
     justify-content: center;
     line-height: 1.6;
     max-width: 1300px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -236,7 +237,7 @@ ul{
 }
 
 .about-text{
-    padding: 40px 20px;
+    padding: 40px 0px;
     max-width: 900px;
     /* font-size: 1.1rem; */
     /* font-weight: 200; */
@@ -282,6 +283,7 @@ ul{
 
 .projects-container-inner{
     max-width: 1800px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
